@@ -3,328 +3,73 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>KlaroPoint — Automated Claim Leakage Auditing</title>
-  <meta name="description" content="KlaroPoint audits claims and payment files, identifies underpayments and rejections, and gives clinics an actionable recovery worklist.">
+  <title>Klaropoint — Clinical Data Integrity & Payer Reconciliation</title>
+  <meta name="description" content="Klaropoint helps ambulatory clinics validate clinical and billing data, reconcile payer activity, and maintain organized, audit-ready operational records.">
   <meta name="theme-color" content="#ffffff">
-  <meta property="og:title" content="KlaroPoint — Stop Losing Revenue You Already Earned">
-  <meta property="og:description" content="Automated claim leakage auditing and payment reconciliation for ambulatory clinics and private practices.">
+  <meta property="og:title" content="Klaropoint — Administrative confidence starts with trusted clinical data">
+  <meta property="og:description" content="Clinical data integrity, payer reconciliation, and audit-ready operational records for ambulatory clinics.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://klaropoint.com/">
-  <meta property="og:image" content="https://klaropoint.com/assets/social-card.svg">
   <link rel="canonical" href="https://klaropoint.com/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-<header class="header">
-  <div class="container nav">
-    <a class="brand" href="#top" aria-label="KlaroPoint home">
-      <span class="brand-symbol" aria-hidden="true"><svg viewBox="0 0 48 48" aria-hidden="true">
-  <path d="M7 10h10c7 0 9 5 12 10"/>
-  <path d="M7 24h13c5 0 7 0 10 0"/>
-  <path d="M7 38h10c7 0 9-5 12-10"/>
-  <path d="M29 20 41 24 29 28z"/>
-</svg></span>
-      <span><b>KlaroPoint</b><small>Claim Integrity Platform</small></span>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="#top" aria-label="Klaropoint home">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 10h9c7 0 9 5 12 10M8 24h22M8 38h9c7 0 9-5 12-10M29 20l11 4-11 4z"/></svg>
+      <span><b>Klaropoint</b><small>Clinical Integrity Platform</small></span>
     </a>
-    <nav class="desktop-nav" aria-label="Main navigation">
-      <a href="#problem">Why leakage happens</a>
-      <a href="#workflow">How it works</a>
-      <a href="#product">Platform</a>
-      <a href="#security">Security</a>
-      <a href="#roi">ROI calculator</a>
+    <button class="menu-button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+      <a href="#product">Product</a><a href="#compliance">Compliance</a><a href="#integrations">Integrations</a><a href="#security">Security</a><a href="#pricing">Pricing</a>
     </nav>
-    <a class="button button-outline" href="contact.html">Request a Demo</a>
+    <div class="nav-actions"><a class="text-link" href="#architecture">Explore platform</a><a class="button small" href="contact.html?interest=integrity-check">Start Free Integrity Check</a></div>
   </div>
 </header>
-
 <main id="top">
 <section class="hero section">
   <div class="container hero-grid">
     <div class="hero-copy reveal">
-      <div class="eyebrow">Automated claim leakage auditing</div>
-      <h1>Stop losing revenue <span>you already earned.</span></h1>
-      <p>KlaroPoint compares claim and payment data against your configured reimbursement expectations, flags potential underpayments and rejections, and gives your team a prioritized recovery worklist—without adding operational overhead.</p>
-      <div class="hero-actions">
-        <a class="button button-primary" href="contact.html?interest=free-audit">Start Your Free Leakage Audit <b>↗</b></a>
-        <a class="button button-link" href="#workflow">See how it works</a>
-      </div>
-      <div class="microcopy">No software installation. No obligation. Start with a sample file.</div>
-      <div class="trust-badges">
-        <span><i>✓</i> Designed for HIPAA-regulated workflows</span>
-        
-        <span><i>✓</i> Data protection by design</span>
-      </div>
+      <p class="eyebrow">Clinical data integrity & payer reconciliation</p>
+      <h1>Administrative confidence starts with trusted clinical data.</h1>
+      <p class="lead">Klaropoint validates clinical and billing data, supports payer reconciliation, and maintains organized activity records so ambulatory clinics can spend less time managing administrative complexity.</p>
+      <div class="actions"><a class="button" href="contact.html?interest=integrity-check">Start Free Integrity Check</a><a class="button secondary" href="#architecture">Explore Platform</a></div>
+      <div class="trust-row"><span>Designed for HIPAA-regulated workflows</span><span>Secure cloud architecture</span><span>Continuous activity records</span></div>
     </div>
-
-    <div class="hero-visual reveal delay">
-      <div class="visual-shell">
-        <div class="visual-heading">
-          <span>Leakage Audit Summary</span>
-          <small>Illustrative example</small>
-        </div>
-        <div class="flow-row">
-          <article>
-            <small>Claims audited</small>
-            <strong>2,500</strong>
-            <div class="mini-bars"><i></i><i></i><i></i><i></i><i></i></div>
-          </article>
-          <span class="flow-arrow">→</span>
-          <article>
-            <small>Payment variances</small>
-            <strong>186</strong>
-            <div class="ring"><b>7.4%</b></div>
-          </article>
-          <span class="flow-arrow">→</span>
-          <article class="highlight">
-            <small>Potential recovery</small>
-            <strong>$48,260</strong>
-            <em>Prioritized for review</em>
-          </article>
-        </div>
-        <div class="variance-list">
-          <div><span><i class="violet"></i> Contract variance</span><b>$18,420</b></div>
-          <div><span><i class="mint"></i> Unresolved rejections</span><b>$16,730</b></div>
-          <div><span><i class="blue"></i> Under-billed services</span><b>$13,110</b></div>
-        </div>
-      </div>
-      <div class="floating-note note-one"><span>✓</span><div><small>Variance found</small><b>$42.18 underpaid</b></div></div>
-      <div class="floating-note note-two"><span>✦</span><div><small>Audit complete</small><b>Ready for review</b></div></div>
+    <div class="architecture-visual reveal" aria-label="Conceptual data workflow">
+      <div class="flow-card">Clinical Systems</div><div class="flow-line"><i></i></div><div class="flow-card">Secure Intake</div><div class="flow-line"><i></i></div><div class="flow-card accent">Integrity & Reconciliation</div><div class="flow-line"><i></i></div><div class="flow-card">Operational Records</div><div class="flow-line"><i></i></div><div class="flow-card">Visibility & Follow-up</div>
+      <p class="caption">Conceptual illustration shown for explanatory purposes. It does not represent the product interface or customer data.</p>
     </div>
   </div>
 </section>
-
-<section class="proof-strip">
-  <div class="container proof-grid">
-    <span>Built for ambulatory clinics</span>
-    <i></i>
-    <span>Private practices</span>
-    <i></i>
-    <span>Outpatient centers</span>
-    <i></i>
-    <span>Billing teams</span>
-  </div>
+<section class="section muted" id="product">
+ <div class="container"><div class="section-head"><p class="eyebrow">Operational clarity</p><h2>The administrative work happens between systems.</h2><p>Clinic teams often validate billing information, review payer responses, prepare documentation, and maintain consistency across disconnected workflows. Klaropoint creates a structured path through that work.</p></div>
+ <div class="card-grid three"><article class="card"><div class="abstract-lines"><i></i><i></i><i></i></div><h3>Administrative Consistency</h3><p>Standardize repetitive review and follow-up activities across the clinic.</p></article><article class="card"><div class="abstract-lines split"><i></i><i></i><i></i></div><h3>Billing Visibility</h3><p>Surface discrepancies earlier and organize the information needed for review.</p></article><article class="card"><div class="abstract-lines stacked"><i></i><i></i><i></i></div><h3>Audit Readiness</h3><p>Maintain structured operational records without rebuilding history manually.</p></article></div></div>
 </section>
-
-<section id="problem" class="section problem">
-  <div class="container">
-    <div class="section-heading centered reveal">
-      <div class="eyebrow">The silent leak</div>
-      <h2>Small payment gaps quietly become large revenue losses.</h2>
-      <p>A payer may underpay $15 on one claim and $40 on another. Individually, the variance is easy to miss. Across thousands of claims, those small gaps can drain meaningful revenue from your practice.</p>
-    </div>
-
-    <div class="problem-grid">
-      <article class="leak-card reveal">
-        <div class="icon-tile">≠</div>
-        <h3>Contract variance</h3>
-        <p>Actual payment does not match your configured reimbursement expectation.</p>
-        <div class="claim-example">
-          <span><small>Expected</small><b>$183.22</b></span>
-          <span><small>Paid</small><b>$164.11</b></span>
-          <strong>+$19.11 opportunity</strong>
-        </div>
-      </article>
-      <article class="leak-card reveal delay">
-        <div class="icon-tile">↺</div>
-        <h3>Unresolved rejections</h3>
-        <p>Rejected and denied claims remain buried in queues without clear follow-up ownership.</p>
-        <div class="claim-example">
-          <span><small>Rejected claims</small><b>47</b></span>
-          <span><small>Aged over 30 days</small><b>19</b></span>
-          <strong>$8,278 at risk</strong>
-        </div>
-      </article>
-      <article class="leak-card reveal delay-2">
-        <div class="icon-tile">⌁</div>
-        <h3>Under-billed services</h3>
-        <p>Missing or incomplete coding can prevent services from reaching their expected reimbursement value.</p>
-        <div class="claim-example">
-          <span><small>Flagged encounters</small><b>32</b></span>
-          <span><small>Review priority</small><b>High</b></span>
-          <strong>$5,940 potential</strong>
-        </div>
-      </article>
-    </div>
-  </div>
+<section class="section feature-list">
+ <div class="container">
+  <article class="feature"><div><p class="eyebrow">Automated data validation</p><h2>Check incoming data before inconsistencies spread.</h2><p>Klaropoint applies structured integrity checks to incoming records and identifies items that may require attention before reconciliation or downstream follow-up.</p></div><div class="mini-flow"><span>Incoming Records</span><b>→</b><span>Integrity Review</span><b>→</b><span>Validated Dataset</span><small>Conceptual illustration shown for explanatory purposes.</small></div></article>
+  <article class="feature reverse"><div><p class="eyebrow">Continuous reconciliation</p><h2>Bring clinical, billing, and payer information into alignment.</h2><p>Comparison workflows help teams identify differences between expected and recorded activity while preserving the context required for responsible investigation.</p></div><div class="mini-flow"><span>Clinical & Billing Records</span><b>→</b><span>Comparison Layer</span><b>→</b><span>Verified Results</span><small>Conceptual illustration shown for explanatory purposes.</small></div></article>
+  <article class="feature"><div><p class="eyebrow">Audit history</p><h2>Keep a reliable record of authorized activity.</h2><p>Organized event history supports operational transparency, internal review, and consistent documentation over time.</p></div><div class="mini-flow"><span>Authorized Activity</span><b>→</b><span>Protected Recording</span><b>→</b><span>Operational History</span><small>Conceptual illustration shown for explanatory purposes.</small></div></article>
+ </div>
 </section>
-
-<section id="workflow" class="section workflow">
-  <div class="container">
-    <div class="section-heading reveal">
-      <div class="eyebrow">Three simple steps</div>
-      <h2>From uploaded files to a prioritized recovery worklist.</h2>
-      <p>KlaroPoint reduces a complex audit process to a straightforward self-serve workflow.</p>
-    </div>
-    <div class="steps">
-      <article class="step reveal">
-        <span class="step-number">01</span>
-        <div class="step-art upload-art">
-          <div class="file f1"></div><div class="file f2"></div><div class="upload-circle">↑</div>
-        </div>
-        <h3>Secure upload</h3>
-        <p>Drag and drop claims and payment files through an encrypted upload path.</p>
-        <ul><li>ERA/835 payment files</li><li>Claim exports</li><li>Configured rate expectations</li></ul>
-      </article>
-      <article class="step reveal delay">
-        <span class="step-number">02</span>
-        <div class="step-art compare-art">
-          <div class="doc left"></div><div class="engine">KP</div><div class="doc right"></div>
-        </div>
-        <h3>Automated comparison</h3>
-        <p>The audit engine cross-checks expected reimbursement against actual payer payments.</p>
-        <ul><li>Rate variance detection</li><li>Rejection pattern analysis</li><li>Duplicate and exception checks</li></ul>
-      </article>
-      <article class="step reveal delay-2">
-        <span class="step-number">03</span>
-        <div class="step-art checklist-art">
-          <span>✓</span><span>✓</span><span>✓</span>
-        </div>
-        <h3>Actionable recovery</h3>
-        <p>Receive a prioritized checklist of claims and supporting details ready for investigation.</p>
-        <ul><li>Financial impact ranking</li><li>Owner and status tracking</li><li>Recovery pipeline visibility</li></ul>
-      </article>
-    </div>
-  </div>
+<section class="section architecture" id="architecture">
+ <div class="container"><div class="section-head centered"><p class="eyebrow">Platform architecture</p><h2>Built around secure clinical operations.</h2><p>A clear separation of intake, processing, integrity services, and visibility helps keep workflows understandable and controlled.</p></div>
+ <div class="layer-stack"><div><b>Practice Systems</b><span>EHR · Billing · Clearinghouse · Partners</span></div><i></i><div><b>Secure Processing</b><span>Protected intake · Validation · Access control</span></div><i></i><div><b>Integrity Services</b><span>Comparison · Reconciliation · Activity history</span></div><i></i><div><b>Reporting & Visibility</b><span>Exceptions · Follow-up · Operational records</span></div></div>
+ <p class="caption centered">Conceptual illustration shown for explanatory purposes. It does not represent the product interface or customer data.</p></div>
 </section>
-
-<section id="product" class="section product">
-  <div class="container">
-    <div class="section-heading centered reveal">
-      <div class="eyebrow">Designed for billing professionals</div>
-      <h2>See what was paid, what was expected, and what needs action.</h2>
-      <p>Conceptual interfaces communicate the workflow without exposing patient data or using real production screenshots.</p>
-    </div>
-
-    <div class="deep-dive">
-      <article class="product-block reveal">
-        <div class="product-copy">
-          <span class="product-label">Integrity & Rate Dashboard</span>
-          <h3>Validate payer performance at a glance.</h3>
-          <p>Review reimbursement accuracy by payer, procedure, location, or time period. Prioritize the largest variances first instead of searching claim by claim.</p>
-          <ul>
-            <li><b>Expected versus paid</b> comparisons</li>
-            <li><b>Payer-level variance</b> trends</li>
-            <li><b>High-value exceptions</b> surfaced automatically</li>
-          </ul>
-        </div>
-        <div class="concept-panel integrity">
-          <div class="panel-top"><b>Payment Integrity</b><span>Last 90 days</span></div>
-          <div class="integrity-metrics">
-            <article><small>Payment accuracy</small><strong>96.1%</strong><em>↑ 2.4%</em></article>
-            <article><small>Potential variance</small><strong>$184K</strong><em>Across 412 claims</em></article>
-          </div>
-          <div class="chart-area">
-            <svg viewBox="0 0 620 240">
-              <path class="grid" d="M30 35H590M30 90H590M30 145H590M30 200H590"/>
-              <path class="area" d="M30 181C100 172 124 142 180 151S260 112 320 119S405 79 470 87S535 50 590 54L590 215H30Z"/>
-              <path class="line" d="M30 181C100 172 124 142 180 151S260 112 320 119S405 79 470 87S535 50 590 54"/>
-            </svg>
-          </div>
-        </div>
-      </article>
-
-      <article class="product-block reverse reveal">
-        <div class="product-copy">
-          <span class="product-label">Recovery Pipeline</span>
-          <h3>Track underpaid claims like a revenue pipeline.</h3>
-          <p>Move each opportunity from detection through investigation, dispute, and recovery with clear ownership and financial impact.</p>
-          <ul>
-            <li><b>Detected</b> claims awaiting review</li>
-            <li><b>Ready to dispute</b> with supporting detail</li>
-            <li><b>Recovered</b> dollars reported over time</li>
-          </ul>
-        </div>
-        <div class="concept-panel pipeline">
-          <div class="panel-top"><b>Recovery Pipeline</b><span>$126,840 total opportunity</span></div>
-          <div class="kanban">
-            <div><strong>Detected <i>12</i></strong><article><b>$8,420</b><small>Contract variance</small></article><article><b>$3,150</b><small>Rejected claim</small></article></div>
-            <div><strong>Ready to dispute <i>8</i></strong><article><b>$12,600</b><small>Underpayment</small></article><article><b>$4,780</b><small>Auth mismatch</small></article></div>
-            <div><strong>Submitted <i>6</i></strong><article><b>$18,240</b><small>Payer review</small></article></div>
-            <div><strong>Recovered <i>21</i></strong><article class="won"><b>$47,910</b><small>Recovered this month</small></article></div>
-          </div>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="security" class="section security">
-  <div class="container security-layout">
-    <div class="security-copy reveal">
-      <div class="eyebrow">Built for healthcare</div>
-      <h2>Security and privacy are built into the workflow.</h2>
-      <p>KlaroPoint is designed to support organizations that handle sensitive clinical and financial information. Security requirements, access controls, data handling, and contractual safeguards are reviewed as part of onboarding.</p>
-      <a class="button button-primary" href="security.html">Request Security Information</a>
-    </div>
-    <div class="security-grid">
-      <article class="reveal"><span>HIPAA</span><h3>Designed for HIPAA-regulated workflows</h3><p>Security and operational controls are designed to support customers working with protected health information. Final compliance depends on each customer’s configuration, policies, and use of the service.</p></article>
-      <article class="reveal delay"><span>PRIVACY</span><h3>Privacy-first architecture</h3><p>Access controls, auditing, and secure data handling are designed to help protect sensitive healthcare and financial information.</p></article>
-      <article class="reveal"><span>CONTROLS</span><h3>Security control framework</h3><p>Operational and technical controls are organized around secure, reliable, and auditable service delivery. Certification status can be confirmed during the security review.</p></article>
-      <article class="reveal delay"><span>ENCRYPTION</span><h3>Protected in transit and at rest</h3><p>KlaroPoint uses encrypted connections and encrypted cloud storage. Detailed cryptographic standards and architecture are provided during the security review.</p></article>
-    </div>
-  </div>
-</section>
-
-<section id="roi" class="section roi">
-  <div class="container roi-card reveal">
-    <div class="roi-copy">
-      <div class="eyebrow">Value calculator</div>
-      <h2>How much recoverable revenue may be hidden in your billing?</h2>
-      <p>Adjust your monthly claims volume to see an illustrative annual opportunity range. The estimate assumes an average claim value of $150 and potential leakage equal to 3–5% of billing volume.</p>
-      <div class="assumptions">Illustrative estimate only. Actual findings depend on payer mix, contracts, coding, and claim quality.</div>
-    </div>
-    <div class="calculator">
-      <label for="claims">Monthly claims volume <output id="claimOutput">1,000</output></label>
-      <input id="claims" type="range" min="500" max="5000" step="250" value="1000">
-      <div class="range-labels"><span>500</span><span>2,500</span><span>5,000</span></div>
-      <div class="estimate">
-        <small>Estimated annual recoverable revenue</small>
-        <strong id="recoveryValue">$54,000–$90,000</strong>
-        <p>One recovered claim may cover a meaningful portion of your subscription.</p>
-      </div>
-      <a class="button button-primary full" href="contact.html?interest=free-audit">Audit My Claims for Free <b>↗</b></a>
-    </div>
-  </div>
-</section>
-
-<section class="final-cta">
-  <div class="container final-inner reveal">
-    <div>
-      <div class="eyebrow light">Low-friction first step</div>
-      <h2>Let’s find the revenue your clinic may be missing.</h2>
-      <p>Upload a sample ERA/835 file and receive a complimentary leakage analysis. No obligation. No software installation.</p>
-    </div>
-    <div class="final-actions">
-      <a class="button button-white" href="contact.html?interest=free-audit">Start Your Free Audit <b>↗</b></a>
-      <a class="button button-transparent" href="contact.html?interest=integration">Talk to an Integration Expert</a>
-    </div>
-  </div>
-</section>
+<section class="section integrations" id="integrations"><div class="container feature"><div><p class="eyebrow">Secure connections</p><h2>Designed to work alongside the systems your clinic already uses.</h2><p>Klaropoint supports structured connections with EHR, clearinghouse, billing, and external partner workflows. Integration scope and security requirements are reviewed during onboarding.</p></div><div class="connection-map"><span class="hub">Practice</span><span>EHR</span><span>Clearinghouse</span><span>Billing</span><span>Partners</span><small>Conceptual illustration shown for explanatory purposes.</small></div></div></section>
+<section class="section dark" id="security"><div class="container"><div class="section-head"><p class="eyebrow">Security</p><h2>Designed for trust.</h2><p>Klaropoint is designed for healthcare organizations that need disciplined data handling, clear access boundaries, and dependable operational records.</p></div><div class="card-grid four"><article><h3>Isolated Environments</h3><p>Each clinic operates within a logically separated environment with access scoped to authorized users and services.</p></article><article><h3>Healthcare Workflow Alignment</h3><p>Security and operational controls are designed to support HIPAA-regulated workflows. Specific contractual and compliance requirements are confirmed during onboarding.</p></article><article><h3>Continuous Activity Records</h3><p>Comprehensive activity history supports operational transparency and responsible review.</p></article><article><h3>Secure Cloud Infrastructure</h3><p>Resilient cloud architecture emphasizes availability, reliability, encryption, and data protection.</p></article></div><a class="button light" href="security.html">Review Security Overview</a></div></section>
+<section class="section" id="roi"><div class="container calculator-wrap"><div><p class="eyebrow">Operational value calculator</p><h2>Estimate the administrative capacity your clinic may recover.</h2><p>Use your own staffing and workflow assumptions. This calculator estimates time and operational value rather than promising revenue recovery.</p></div><form class="calculator" id="roi-calculator"><label>Average monthly billing volume<input id="billing-volume" type="number" min="0" value="500000"></label><label>Weekly administrative hours<input id="admin-hours" type="number" min="0" value="30"></label><label>Average hourly administrative cost<input id="hourly-cost" type="number" min="0" value="35"></label><label>Estimated workflow efficiency improvement<select id="efficiency"><option value="0.1">Conservative — 10%</option><option value="0.2" selected>Moderate — 20%</option><option value="0.3">Higher — 30%</option></select></label><div class="results"><div><span>Annual hours potentially redirected</span><strong id="hours-saved">312</strong></div><div><span>Estimated annual operational value</span><strong id="operational-value">$10,920</strong></div><div><span>Productivity improvement</span><strong id="productivity">20%</strong></div></div><small>Illustrative estimates based on your inputs. Actual results vary by workflow and operational processes. Billing volume does not directly change this time-based estimate.</small></form></div></section>
+<section class="section muted" id="pricing"><div class="container pricing-grid"><div><p class="eyebrow">Pricing</p><h2>Simple pricing for ambulatory clinics.</h2><p>Custom pricing based on clinic size, data volume, integration scope, and operational needs.</p></div><article class="price-card"><h3>Klaropoint Platform</h3><ul><li>Data validation</li><li>Reconciliation workflows</li><li>Activity history</li><li>Secure integrations</li><li>Guided onboarding</li><li>Continuous updates</li><li>Email support</li></ul><a class="button" href="contact.html?interest=consultation">Schedule Consultation</a></article></div></section>
+<section class="section" id="compliance"><div class="container faq"><div><p class="eyebrow">Frequently asked questions</p><h2>Clear answers before you begin.</h2></div><div class="accordion"><details><summary>How does Klaropoint fit into existing workflows?</summary><p>Klaropoint is designed to add structured validation, reconciliation, and documentation around existing clinic processes rather than forcing an immediate replacement of core systems.</p></details><details><summary>Do we need to replace our EHR?</summary><p>No. Klaropoint is designed to work alongside existing clinical, billing, clearinghouse, and payer workflows.</p></details><details><summary>How is information protected?</summary><p>Protection includes encrypted transport and storage, scoped access, logical separation, controlled processing, and activity records. Detailed controls are reviewed during security evaluation.</p></details><details><summary>How long does onboarding take?</summary><p>Timing depends on data sources, integration scope, security review, and clinic readiness. A focused initial assessment establishes the expected path and timeline.</p></details><details><summary>Can we review contractual and compliance requirements?</summary><p>Yes. Relevant security, privacy, data handling, and contractual requirements are reviewed before sensitive information is exchanged.</p></details></div></div></section>
+<section class="section final-cta"><div class="container"><h2>Build confidence into every administrative workflow.</h2><p>Klaropoint helps ambulatory clinics strengthen data integrity, support billing accuracy, and maintain organized operational documentation through secure, structured workflows.</p><div class="actions centered"><a class="button" href="contact.html?interest=integrity-check">Start Free Integrity Check</a><a class="button secondary" href="#architecture">Explore Platform</a></div></div></section>
 </main>
-
-<footer>
-  <div class="container footer">
-    <div class="footer-about">
-      <a class="brand" href="#top">
-        <span class="brand-symbol" aria-hidden="true"><svg viewBox="0 0 48 48" aria-hidden="true">
-  <path d="M7 10h10c7 0 9 5 12 10"/>
-  <path d="M7 24h13c5 0 7 0 10 0"/>
-  <path d="M7 38h10c7 0 9-5 12-10"/>
-  <path d="M29 20 41 24 29 28z"/>
-</svg></span>
-        <span><b>KlaroPoint</b><small>Claim Integrity Platform</small></span>
-      </a>
-      <p>Automated claim leakage auditing and payment reconciliation for ambulatory clinics and private practices.</p>
-    </div>
-    <div><b>Platform</b><a href="#problem">Revenue leakage</a><a href="#workflow">How it works</a><a href="#product">Capabilities</a></div>
-    <div><b>Trust</b><a href="#security">Security</a><a href="security.html">BAA & security</a><a href="#roi">ROI calculator</a></div>
-    <div><b>Contact</b><a href="contact.html">Contact</a><a href="contact.html?interest=free-audit">Start free audit</a><small>© <span id="year"></span> KlaroPoint</small></div>
-  </div>
-</footer>
-<script src="script.js"></script>
-</body>
-</html>
+<footer><div class="container footer-grid"><div class="brand footer-brand"><svg viewBox="0 0 48 48"><path d="M8 10h9c7 0 9 5 12 10M8 24h22M8 38h9c7 0 9-5 12-10M29 20l11 4-11 4z"/></svg><span><b>Klaropoint</b><small>Clinical Integrity Platform</small></span></div><div><b>Product</b><a href="#product">Capabilities</a><a href="#integrations">Integrations</a><a href="#pricing">Pricing</a></div><div><b>Trust</b><a href="security.html">Security</a><a href="privacy.html">Privacy</a><a href="#compliance">FAQ</a></div><div><b>Company</b><a href="contact.html">Contact</a><a href="privacy.html">Terms & privacy</a></div></div><div class="container legal">© <span id="year"></span> Klaropoint. Public website forms must not be used to transmit PHI or patient information.</div></footer>
+</body></html>

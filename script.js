@@ -1,35 +1,6 @@
-document.getElementById("year").textContent = new Date().getFullYear();
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.12 });
-
-document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
-
-const claims = document.getElementById("claims");
-const claimOutput = document.getElementById("claimOutput");
-const recoveryValue = document.getElementById("recoveryValue");
-
-function money(n) {
-  return new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-    maximumFractionDigits: 0
-  }).format(n);
-}
-
-function updateROI() {
-  const monthlyClaims = Number(claims.value);
-  const annualBillings = monthlyClaims * 150 * 12;
-  const low = annualBillings * 0.03;
-  const high = annualBillings * 0.05;
-  claimOutput.textContent = monthlyClaims.toLocaleString("en-US");
-  recoveryValue.textContent = `${money(low)}–${money(high)}`;
-}
-claims.addEventListener("input", updateROI);
-updateROI();
+const q=(s,c=document)=>c.querySelector(s);const qa=(s,c=document)=>[...c.querySelectorAll(s)];
+q('#year')&&(q('#year').textContent=new Date().getFullYear());
+const menu=q('.menu-button'),nav=q('#main-nav');if(menu&&nav){menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')==='true';menu.setAttribute('aria-expanded',String(!open));nav.classList.toggle('open',!open)});qa('a',nav).forEach(a=>a.addEventListener('click',()=>{menu.setAttribute('aria-expanded','false');nav.classList.remove('open')}))}
+const io='IntersectionObserver'in window?new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.12}):null;qa('.reveal').forEach(el=>io?io.observe(el):el.classList.add('visible'));
+const calc=q('#roi-calculator');if(calc){const update=()=>{const h=Math.max(0,+q('#admin-hours').value||0),c=Math.max(0,+q('#hourly-cost').value||0),e=+q('#efficiency').value||0;const saved=h*52*e;q('#hours-saved').textContent=Math.round(saved).toLocaleString();q('#operational-value').textContent=new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(saved*c);q('#productivity').textContent=Math.round(e*100)+'%'};calc.addEventListener('input',update);update()}
+const form=q('#contact-form');if(form){const params=new URLSearchParams(location.search),interest=params.get('interest');if(interest&&q('#interest'))q('#interest').value=interest;form.addEventListener('submit',async e=>{e.preventDefault();const status=q('#form-status'),button=q('button[type=submit]',form),endpoint=form.action;if(endpoint.includes('REPLACE_WITH_FORM_ID')){status.className='form-status error';status.textContent='This form is not configured yet. Add your Formspree form ID to contact.html before publishing.';return}if(!form.reportValidity())return;button.disabled=true;button.textContent='Submitting…';status.textContent='';try{const r=await fetch(endpoint,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}});if(!r.ok)throw new Error('Submission failed');form.reset();status.className='form-status success';status.textContent='Thank you. Your request was submitted successfully.'}catch(err){status.className='form-status error';status.textContent='We could not submit your request. Please email info@klaropoint.com instead.'}finally{button.disabled=false;button.textContent='Submit Request'}})}
