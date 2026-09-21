@@ -1,219 +1,122 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Klaropoint — Clinical Data Integrity & Payer Reconciliation</title>
-  <meta name="description" content="Klaropoint helps ambulatory clinics catch clinical and billing data mismatches, reconcile payer activity, and maintain audit-ready operational history without replacing the EHR.">
-  <meta name="theme-color" content="#0b1220">
-  <meta property="og:title" content="Klaropoint — Catch the data mismatches slowing down billing follow-up">
-  <meta property="og:description" content="Validate clinical and billing records, surface discrepancies, reconcile payer activity, and preserve audit-ready history in one secure workflow.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://klaropoint.com/">
-  <link rel="canonical" href="https://klaropoint.com/">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script defer src="script.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Klaropoint — Find Missing Revenue in Healthcare Claims</title>
+<meta name="description" content="Klaropoint helps clinics identify claims that may be denied, underpaid, missing, or out of sync so revenue-cycle teams know where to follow up.">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:title" content="Klaropoint — Find missing revenue in healthcare claims">
+<meta property="og:description" content="Surface claim issues, prioritize follow-up, and keep resolution history organized without replacing your existing systems.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://klaropoint.com/">
+<link rel="canonical" href="https://klaropoint.com/">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script defer src="script.js"></script>
 </head>
 <body>
 <header class="site-header">
-  <div class="container nav-wrap">
+  <div class="container nav">
     <a class="brand" href="#top" aria-label="Klaropoint home">
-      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 10h9c7 0 9 5 12 10M8 24h22M8 38h9c7 0 9-5 12-10M29 20l11 4-11 4z"/></svg>
-      <span><b>Klaropoint</b><small>Clinical Integrity Platform</small></span>
+      <img src="assets/klaropoint-mark.svg" alt="">
+      <span class="wordmark"><b>Klaro</b><b>point</b><small>Claim Revenue Intelligence</small></span>
     </a>
-    <button class="menu-button" aria-expanded="false" aria-controls="main-nav">Menu</button>
-    <nav id="main-nav" class="main-nav" aria-label="Main navigation">
-      <a href="#product">Product</a>
-      <a href="#how-it-works">How it works</a>
-      <a href="#integrations">Integrations</a>
-      <a href="#security">Security</a>
-      <a href="#pricing">Pricing</a>
+    <nav aria-label="Main navigation">
+      <a href="#how">How it works</a>
+      <a href="#trust">Trust</a>
+      <a class="button small" href="contact.html">Request a free review</a>
     </nav>
-    <div class="nav-actions">
-      <a class="button small" href="contact.html?interest=integrity-check">Request Free Integrity Review</a>
-    </div>
   </div>
 </header>
 
 <main id="top">
-<section class="hero section">
-  <div class="hero-glow hero-glow-one"></div><div class="hero-glow hero-glow-two"></div>
+<section class="hero">
   <div class="container hero-grid">
-    <div class="hero-copy reveal">
-      <div class="pill">For ambulatory clinic operations & revenue cycle teams</div>
-      <h1>Catch the data mismatches slowing down billing follow-up.</h1>
-      <p class="lead">Klaropoint helps clinics validate clinical and billing records, flag discrepancies, reconcile payer activity, and preserve an audit-ready history—without replacing the systems you already use.</p>
+    <div class="hero-copy">
+      <p class="eyebrow">Healthcare claim revenue intelligence</p>
+      <h1>Find the revenue your claims are leaving behind.</h1>
+      <p class="lead">Klaropoint helps clinics surface claims that may be denied, underpaid, missing, or out of sync—so your team knows what to investigate and where to follow up.</p>
       <div class="actions">
-        <a class="button" href="contact.html?interest=integrity-check">Request Free Integrity Review</a>
-        <a class="button ghost" href="#product">See how it works</a>
+        <a class="button" href="contact.html?interest=claims-review">Request a free claims review</a>
+        <a class="text-link" href="#how">See how it works →</a>
       </div>
-      <div class="hero-assurances">
-        <span>Works alongside your EHR</span>
-        <span>Built for controlled healthcare workflows</span>
-        <span>No PHI submitted through this website</span>
-      </div>
+      <div class="micro-trust"><span>Works alongside your current systems</span><span>No PHI through this website</span></div>
     </div>
 
-    <div class="product-window reveal" aria-label="Conceptual Klaropoint product dashboard using sample data">
-      <div class="window-top"><span></span><span></span><span></span><b>Klaropoint / Integrity Review</b></div>
-      <div class="window-body">
-        <div class="window-sidebar">
-          <div class="side-logo">K</div>
-          <i class="active"></i><i></i><i></i><i></i>
-        </div>
-        <div class="window-main">
-          <div class="mock-head"><div><small>Integrity overview</small><strong>Records requiring attention</strong></div><em>Sample data</em></div>
-          <div class="metric-row">
-            <div><small>Reviewed</small><strong>1,284</strong><span>this cycle</span></div>
-            <div><small>Needs review</small><strong>37</strong><span>2.9% of records</span></div>
-            <div><small>Reconciled</small><strong>1,247</strong><span>documented</span></div>
-          </div>
-          <div class="mock-table">
-            <div class="table-head"><span>Issue</span><span>Source</span><span>Status</span></div>
-            <div><span><b class="status-dot warning"></b>Procedure / charge mismatch</span><span>EHR ↔ Billing</span><span class="tag amber">Review</span></div>
-            <div><span><b class="status-dot warning"></b>Payer response mismatch</span><span>Clearinghouse</span><span class="tag amber">Review</span></div>
-            <div><span><b class="status-dot success"></b>Demographic validation</span><span>EHR ↔ Billing</span><span class="tag green">Resolved</span></div>
-            <div><span><b class="status-dot success"></b>Payment activity matched</span><span>Payer ↔ Billing</span><span class="tag green">Resolved</span></div>
-          </div>
-          <div class="audit-strip"><span>✓ Activity captured</span><span>✓ Resolution documented</span><span>✓ Follow-up organized</span></div>
-        </div>
-      </div>
-      <p class="caption">Conceptual product illustration with sample data. It does not represent customer information.</p>
+    <div class="claim-card" aria-label="Conceptual claim review illustration using sample data">
+      <div class="claim-card-head"><span>Claim review</span><em>Sample data</em></div>
+      <div class="claim-summary"><strong>Items needing attention</strong><span>Prioritized for follow-up</span></div>
+      <div class="claim-row"><i class="dot red"></i><div><b>Denied claim</b><small>Payer response requires review</small></div><span class="chip">Review</span></div>
+      <div class="claim-row"><i class="dot amber"></i><div><b>Possible underpayment</b><small>Expected vs. recorded amount differs</small></div><span class="chip">Compare</span></div>
+      <div class="claim-row"><i class="dot blue"></i><div><b>Missing claim activity</b><small>No matching downstream status found</small></div><span class="chip">Trace</span></div>
+      <div class="claim-row resolved"><i class="dot green"></i><div><b>Resolved</b><small>Follow-up and outcome documented</small></div><span class="chip done">Closed</span></div>
+      <p>Conceptual workflow illustration. No customer data shown.</p>
     </div>
   </div>
 </section>
 
-<section class="proof-strip">
-  <div class="container proof-grid">
-    <span>Clinical data validation</span><i></i><span>Billing reconciliation</span><i></i><span>Payer activity review</span><i></i><span>Audit-ready history</span>
-  </div>
-</section>
-
-<section class="section problem-section" id="product">
+<section class="short-section">
   <div class="container">
-    <div class="section-head centered narrow reveal">
-      <p class="eyebrow">Where errors hide</p>
-      <h2>The problem usually isn’t one system. It’s what happens between them.</h2>
-      <p>When clinical, billing, clearinghouse, and payer records do not line up, teams spend time comparing screens, spreadsheets, emails, and notes to understand what happened.</p>
+    <div class="section-head">
+      <p class="eyebrow">What Klaropoint focuses on</p>
+      <h2>Less searching. More focused claim follow-up.</h2>
     </div>
-    <div class="pain-grid">
-      <article class="pain-card reveal"><div class="pain-icon">01</div><h3>Find discrepancies earlier</h3><p>Surface records that may require attention before they turn into manual follow-up work.</p><span>Less searching across disconnected systems</span></article>
-      <article class="pain-card reveal"><div class="pain-icon">02</div><h3>Reconcile with context</h3><p>Compare expected and recorded activity while keeping the details needed for responsible investigation.</p><span>Clearer handoff from issue to resolution</span></article>
-      <article class="pain-card reveal"><div class="pain-icon">03</div><h3>Keep the history</h3><p>Preserve an organized record of authorized activity, follow-up, and resolution over time.</p><span>Less rebuilding history during review</span></article>
+    <div class="three-cards">
+      <article><span>01</span><h3>Find claim leakage</h3><p>Bring attention to claims that may need a second look instead of relying on manual discovery.</p></article>
+      <article><span>02</span><h3>Prioritize the work</h3><p>Organize exceptions so teams can focus first on the items most worth investigating.</p></article>
+      <article><span>03</span><h3>Keep the history</h3><p>Track follow-up and resolution context so the next review does not start from scratch.</p></article>
     </div>
   </div>
 </section>
 
-<section class="section workflow-section" id="how-it-works">
+<section class="short-section dark" id="how">
   <div class="container">
-    <div class="section-head reveal"><p class="eyebrow">How it works</p><h2>From incoming records to a documented resolution path.</h2><p>Klaropoint adds an integrity and reconciliation layer around your existing operational workflow.</p></div>
-    <div class="workflow-steps">
-      <article class="step reveal"><span>1</span><div><small>Connect</small><h3>Bring in the records that matter.</h3><p>Use structured connections to approved clinical, billing, clearinghouse, or partner data sources.</p></div></article>
-      <div class="step-line"></div>
-      <article class="step reveal"><span>2</span><div><small>Check</small><h3>Identify mismatches and exceptions.</h3><p>Apply integrity checks and comparison logic so teams can focus on items that actually require review.</p></div></article>
-      <div class="step-line"></div>
-      <article class="step reveal"><span>3</span><div><small>Resolve</small><h3>Reconcile and preserve the history.</h3><p>Organize follow-up, resolution context, and authorized activity in one operational record.</p></div></article>
+    <div class="section-head">
+      <p class="eyebrow">How it works</p>
+      <h2>Connect. Detect. Follow through.</h2>
+    </div>
+    <div class="steps">
+      <article><b>1</b><div><h3>Connect the right data</h3><p>Use approved clinical, billing, clearinghouse, or payer data sources.</p></div></article>
+      <article><b>2</b><div><h3>Detect claim exceptions</h3><p>Compare activity and surface items that appear missing, denied, underpaid, or inconsistent.</p></div></article>
+      <article><b>3</b><div><h3>Work and document the follow-up</h3><p>Give the team one organized view for investigation, status, and resolution history.</p></div></article>
+    </div>
+    <div class="stack-note">Designed to fit around your current EHR and billing workflow—without a rip-and-replace project.</div>
+  </div>
+</section>
+
+<section class="short-section" id="trust">
+  <div class="container trust-grid">
+    <div>
+      <p class="eyebrow">Trust before data</p>
+      <h2>Start with the workflow, not patient information.</h2>
+      <p>Klaropoint is designed for controlled healthcare workflows. Security, access, integration, and data-handling requirements are reviewed before any sensitive information is exchanged.</p>
+    </div>
+    <div class="trust-list">
+      <span>Scoped access</span>
+      <span>Protected data handling</span>
+      <span>Operational activity history</span>
+      <span>No PHI in the public web form</span>
     </div>
   </div>
 </section>
 
-<section class="section capability-section">
-  <div class="container capability-grid">
-    <div class="capability-copy reveal">
-      <p class="eyebrow">One operational layer</p>
-      <h2>Give your team a clearer place to work the exceptions.</h2>
-      <p>Instead of adding another general-purpose dashboard, Klaropoint is designed around the specific work of finding, investigating, and documenting data integrity and payer reconciliation issues.</p>
-      <ul class="check-list">
-        <li>Structured integrity checks on incoming records</li>
-        <li>Exception queues for items that need review</li>
-        <li>Clinical, billing, and payer comparison workflows</li>
-        <li>Resolution context and activity history</li>
-        <li>Operational visibility for managers and reviewers</li>
-      </ul>
-      <a class="text-cta" href="contact.html?interest=consultation">Discuss your workflow <span>→</span></a>
-    </div>
-    <div class="exception-panel reveal">
-      <div class="panel-title"><div><small>Exception queue</small><strong>Today’s review</strong></div><span>7 open</span></div>
-      <div class="exception-item"><b>Claim activity mismatch</b><small>Expected payer response not aligned with recorded billing status</small><div><span class="severity medium">Medium</span><em>Assigned</em></div></div>
-      <div class="exception-item"><b>Clinical / billing variance</b><small>Selected record fields require comparison before downstream follow-up</small><div><span class="severity high">High</span><em>New</em></div></div>
-      <div class="exception-item resolved"><b>Payment reconciliation</b><small>Recorded activity aligned and resolution context preserved</small><div><span class="severity done">Resolved</span><em>Closed</em></div></div>
-      <div class="panel-foot">Conceptual workflow illustration • sample data only</div>
-    </div>
-  </div>
-</section>
-
-<section class="section integrations" id="integrations">
-  <div class="container integration-grid">
-    <div class="reveal"><p class="eyebrow">Fits around your current stack</p><h2>No rip-and-replace project required.</h2><p>Klaropoint is designed to work alongside existing EHR, billing, clearinghouse, and approved partner workflows. Integration scope, access, and security requirements are reviewed before onboarding.</p><div class="inline-note">Start with the workflow causing the most administrative friction, then expand deliberately.</div></div>
-    <div class="connection-map reveal"><span class="hub">Klaropoint</span><span>EHR</span><span>Billing</span><span>Clearinghouse</span><span>Payer / Partner</span><small>Conceptual integration view</small></div>
-  </div>
-</section>
-
-<section class="section dark" id="security">
-  <div class="container security-grid">
-    <div class="section-head reveal"><p class="eyebrow">Trust before data</p><h2>Security questions should come before sensitive information is exchanged.</h2><p>Klaropoint is designed for healthcare organizations that need disciplined data handling, clear access boundaries, and dependable operational records. Specific contractual and compliance requirements are confirmed during evaluation and onboarding.</p><a class="button light" href="security.html">Review Security Overview</a></div>
-    <div class="security-points reveal">
-      <article><span>01</span><div><h3>Scoped access</h3><p>Access is intended to be limited to authorized users and services.</p></div></article>
-      <article><span>02</span><div><h3>Logical separation</h3><p>Clinic environments are designed with clear data and access boundaries.</p></div></article>
-      <article><span>03</span><div><h3>Protected data handling</h3><p>Architecture emphasizes encryption, reliability, and controlled processing.</p></div></article>
-      <article><span>04</span><div><h3>Operational history</h3><p>Authorized activity can be preserved to support transparency and review.</p></div></article>
-    </div>
-  </div>
-</section>
-
-<section class="section value-section" id="roi">
-  <div class="container calculator-wrap">
-    <div class="reveal"><p class="eyebrow">Operational value</p><h2>What is manual reconciliation costing your team?</h2><p>Estimate the administrative capacity that could be redirected when repetitive review and follow-up becomes more structured. This is a time-based estimate, not a promise of revenue recovery.</p></div>
-    <form class="calculator reveal" id="roi-calculator">
-      <label>Weekly administrative hours spent on review / reconciliation<input id="admin-hours" type="number" min="0" value="30"></label>
-      <label>Average hourly administrative cost<input id="hourly-cost" type="number" min="0" value="35"></label>
-      <label>Estimated workflow efficiency improvement<select id="efficiency"><option value="0.1">Conservative — 10%</option><option value="0.2" selected>Moderate — 20%</option><option value="0.3">Higher — 30%</option></select></label>
-      <div class="results"><div><span>Annual hours potentially redirected</span><strong id="hours-saved">312</strong></div><div><span>Estimated annual operational value</span><strong id="operational-value">$10,920</strong></div><div><span>Illustrative improvement</span><strong id="productivity">20%</strong></div></div>
-      <small>Illustrative estimates based on your inputs. Actual results vary by workflow, staffing, and implementation.</small>
-    </form>
-  </div>
-</section>
-
-<section class="section pricing-section" id="pricing">
-  <div class="container pricing-grid">
-    <div class="reveal"><p class="eyebrow">Pricing</p><h2>Start with the workflow worth fixing first.</h2><p>Pricing is based on clinic size, data volume, integration scope, and operational requirements. A short discovery conversation helps define the right starting point before any sensitive data is exchanged.</p><a class="text-cta" href="contact.html?interest=consultation">Talk through your use case <span>→</span></a></div>
-    <article class="price-card reveal"><div class="price-top"><small>Klaropoint Platform</small><strong>Custom</strong><span>based on scope</span></div><ul><li>Clinical & billing data validation</li><li>Reconciliation workflows</li><li>Exception visibility</li><li>Activity history</li><li>Secure integration planning</li><li>Guided onboarding</li><li>Email support</li></ul><a class="button" href="contact.html?interest=integrity-check">Request Free Integrity Review</a><p>No patient information is needed for the initial conversation.</p></article>
-  </div>
-</section>
-
-<section class="section faq-section" id="faq">
-  <div class="container faq">
-    <div class="reveal"><p class="eyebrow">FAQ</p><h2>Questions buyers usually ask first.</h2><p>Start with the operational fit, then validate security and integration requirements for your environment.</p></div>
-    <div class="accordion reveal">
-      <details open><summary>Do we need to replace our EHR or billing system?</summary><p>No. Klaropoint is designed to add structured validation, reconciliation, and documentation around existing clinic systems and workflows.</p></details>
-      <details><summary>What does the free integrity review involve?</summary><p>It starts with a conversation about your current workflow, where manual reconciliation happens, and which systems are involved. Do not send patient information or PHI through the public website form.</p></details>
-      <details><summary>What types of systems can Klaropoint work with?</summary><p>The platform is designed around structured connections to EHR, billing, clearinghouse, payer, and approved partner workflows. Actual integration scope is confirmed during evaluation.</p></details>
-      <details><summary>How is information protected?</summary><p>The platform architecture emphasizes encrypted data handling, scoped access, logical separation, controlled processing, and operational activity records. Detailed controls are reviewed during security evaluation.</p></details>
-      <details><summary>How long does onboarding take?</summary><p>Timing depends on data sources, integration scope, security review, and clinic readiness. A focused initial assessment establishes the expected path and timeline.</p></details>
-    </div>
-  </div>
-</section>
-
-<section class="section final-cta">
-  <div class="container final-card reveal">
-    <div><p class="eyebrow">Start with one workflow</p><h2>See where data integrity gaps are creating avoidable administrative work.</h2><p>Tell us how your clinic handles validation, payer reconciliation, or exception follow-up today. We’ll use that conversation to identify whether Klaropoint is a fit.</p></div>
-    <div class="final-actions"><a class="button" href="contact.html?interest=integrity-check">Request Free Integrity Review</a><span>No PHI required • Direct response from the Klaropoint team</span></div>
+<section class="final-cta">
+  <div class="container cta-box">
+    <div><p class="eyebrow">Start small</p><h2>See where claim revenue may be slipping through.</h2></div>
+    <a class="button" href="contact.html?interest=claims-review">Request a free claims review</a>
   </div>
 </section>
 </main>
 
 <footer>
-  <div class="container footer-grid">
-    <div class="brand footer-brand"><svg viewBox="0 0 48 48"><path d="M8 10h9c7 0 9 5 12 10M8 24h22M8 38h9c7 0 9-5 12-10M29 20l11 4-11 4z"/></svg><span><b>Klaropoint</b><small>Clinical Integrity Platform</small></span></div>
-    <div><b>Product</b><a href="#product">Capabilities</a><a href="#how-it-works">How it works</a><a href="#integrations">Integrations</a><a href="#pricing">Pricing</a></div>
-    <div><b>Trust</b><a href="security.html">Security</a><a href="privacy.html">Privacy</a><a href="#faq">FAQ</a></div>
-    <div><b>Company</b><a href="contact.html">Contact</a><a href="privacy.html">Terms & privacy</a></div>
+  <div class="container footer">
+    <a class="brand" href="#top"><img src="assets/klaropoint-mark.svg" alt=""><span class="wordmark"><b>Klaro</b><b>point</b></span></a>
+    <div><a href="contact.html">Contact</a><a href="contact.html#privacy">Privacy</a><span>© <span id="year"></span> Klaropoint</span></div>
   </div>
-  <div class="container legal">© <span id="year"></span> Klaropoint. Public website forms must not be used to transmit PHI or patient information.</div>
 </footer>
 </body>
 </html>
