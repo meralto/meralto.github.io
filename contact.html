@@ -1,13 +1,85 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contact Klaropoint</title><meta name="description" content="Request a Klaropoint integrity check, consultation, integration discussion, or security review."><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"><script defer src="script.js"></script></head><body>
-<header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><svg viewBox="0 0 48 48"><path d="M8 10h9c7 0 9 5 12 10M8 24h22M8 38h9c7 0 9-5 12-10M29 20l11 4-11 4z"/></svg><span><b>Klaropoint</b><small>Clinical Integrity Platform</small></span></a><a class="button secondary small" href="index.html">Back to Home</a></div></header>
-<main><section class="section contact-page"><div class="container contact-grid"><div><p class="eyebrow">Start a conversation</p><h1>Find out where data integrity and reconciliation work is costing your team time.</h1><p class="lead">Tell us which workflow is creating the most manual review or follow-up. We’ll respond by email to arrange a focused conversation—no patient information needed.</p><div class="contact-points"><span>No software installation for an initial conversation</span><span>No patient information requested</span><span>Security requirements reviewed before data exchange</span><span>Direct response from the Klaropoint team</span></div><div class="phi-warning"><b>Do not submit sensitive information.</b><p>Please do not enter patient names, medical record numbers, claim identifiers, diagnoses, payment files, or any protected health information through this public form.</p></div></div>
-<form id="contact-form" class="contact-form" action="https://formspree.io/f/xqerbeeq" method="POST">
-<input type="hidden" name="_subject" value="New Klaropoint website inquiry"><input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
-<div class="field-grid"><label>Full name *<input name="name" autocomplete="name" required></label><label>Work email *<input type="email" name="email" autocomplete="email" required></label></div>
-<label>Clinic or organization *<input name="organization" autocomplete="organization" required></label>
-<div class="field-grid"><label>Your role *<select name="role" required><option value="">Select one</option><option>Clinic owner</option><option>Practice manager</option><option>Billing supervisor</option><option>Revenue cycle leader</option><option>IT or security</option><option>Other</option></select></label><label>Approximate monthly claims<select name="monthly_claims"><option value="">Select a range</option><option>Under 500</option><option>500–1,000</option><option>1,001–2,500</option><option>2,501–5,000</option><option>More than 5,000</option></select></label></div>
-<label>I’m interested in *<select id="interest" name="interest" required><option value="">Select one</option><option value="integrity-check">Free integrity review</option><option value="consultation">Platform consultation</option><option value="integration">Integration discussion</option><option value="security">Security review</option></select></label>
-<label>What would you like us to know?<textarea name="message" rows="5" maxlength="1500" placeholder="Describe your goals or current administrative process. Do not include patient or claim-specific information."></textarea></label>
-<label class="checkbox"><input type="checkbox" name="no_sensitive_data" value="confirmed" required><span>I confirm that this submission does not include patient information, PHI, claims data, or other sensitive clinical information.</span></label>
-<p class="form-note">By submitting, you agree that Klaropoint may contact you about your request. See our <a href="privacy.html">Privacy Notice</a>.</p><button class="button" type="submit">Submit Request</button><div id="form-status" class="form-status" role="status" aria-live="polite"></div>
-</form></div></section></main><footer><div class="container legal">© <span id="year"></span> Klaropoint · <a href="privacy.html">Privacy</a> · <a href="security.html">Security</a></div></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact Klaropoint</title>
+<meta name="description" content="Request a free Klaropoint claims review or discuss claim revenue workflow.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script defer src="script.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="assets/klaropoint-mark.svg" alt="">
+      <span class="wordmark"><b>Klaro</b><b>point</b><small>Claim Revenue Intelligence</small></span>
+    </a>
+    <nav><a href="index.html">Home</a></nav>
+  </div>
+</header>
+
+<main>
+<section class="contact-hero">
+  <div class="container contact-grid">
+    <div class="contact-copy">
+      <p class="eyebrow">Free claims review</p>
+      <h1>See where claim revenue may be slipping through.</h1>
+      <p class="lead">Tell us where your team spends time today—denials, underpayments, missing claim activity, reconciliation, or follow-up. We’ll use that to decide whether Klaropoint is a fit.</p>
+      <div class="contact-points">
+        <span>No software installation for the first conversation</span>
+        <span>No patient information requested</span>
+        <span>Security and integration requirements reviewed before data exchange</span>
+      </div>
+      <div class="warning"><b>Please do not send PHI.</b><p>Do not enter patient names, medical record numbers, claim identifiers, diagnoses, payment files, or other sensitive clinical information in this public form.</p></div>
+    </div>
+
+    <form id="contact-form" class="contact-form" action="https://formspree.io/f/xqerbeeq" method="POST">
+      <input type="hidden" name="_subject" value="New Klaropoint claims inquiry">
+      <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="field-grid">
+        <label>Full name *<input name="name" autocomplete="name" required></label>
+        <label>Work email *<input type="email" name="email" autocomplete="email" required></label>
+      </div>
+      <label>Clinic or organization *<input name="organization" autocomplete="organization" required></label>
+      <div class="field-grid">
+        <label>Your role *<select name="role" required><option value="">Select one</option><option>Clinic owner</option><option>Practice manager</option><option>Billing / revenue cycle</option><option>Finance</option><option>IT / security</option><option>Other</option></select></label>
+        <label>Approximate monthly claims<select name="monthly_claims"><option value="">Select a range</option><option>Under 500</option><option>500–1,000</option><option>1,001–2,500</option><option>2,501–5,000</option><option>More than 5,000</option></select></label>
+      </div>
+      <label>Primary challenge *<select id="interest" name="interest" required>
+        <option value="">Select one</option>
+        <option value="claims-review">Free claims review</option>
+        <option value="denials">Denied claims</option>
+        <option value="underpayments">Underpayments</option>
+        <option value="missing-activity">Missing claim activity</option>
+        <option value="reconciliation">Claim / payment reconciliation</option>
+        <option value="general">General discussion</option>
+      </select></label>
+      <label>What would you like us to know?<textarea name="message" rows="5" maxlength="1500" placeholder="Briefly describe the workflow or challenge. Do not include patient or claim-specific information."></textarea></label>
+      <label class="checkbox"><input type="checkbox" name="no_sensitive_data" value="confirmed" required><span>I confirm this submission does not include patient information, PHI, claims data, or other sensitive clinical information.</span></label>
+      <button class="button" type="submit">Submit request</button>
+      <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+
+<section class="privacy-strip" id="privacy">
+  <div class="container privacy-grid">
+    <div><h2>Privacy</h2><p>We use the information you submit only to respond to your inquiry and manage business follow-up. The form is processed through Formspree. Do not use this website to send PHI or patient-level information.</p></div>
+    <div><h2>Security</h2><p>Any customer-specific security, access, retention, contractual, or compliance requirements are reviewed before onboarding or sensitive data exchange.</p></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer">
+    <a class="brand" href="index.html"><img src="assets/klaropoint-mark.svg" alt=""><span class="wordmark"><b>Klaro</b><b>point</b></span></a>
+    <div><a href="index.html">Home</a><span>© <span id="year"></span> Klaropoint</span></div>
+  </div>
+</footer>
+</body>
+</html>
