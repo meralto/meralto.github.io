@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="t">
+<title id="t">Klaropoint</title>
+<path fill="#0B3B68" d="M64 6C33.6 6 12 27.5 12 56.4c0 35.7 52 65.6 52 65.6s52-29.9 52-65.6C116 27.5 94.4 6 64 6Z"/>
+<circle cx="64" cy="55" r="36" fill="#fff"/>
+<path fill="none" stroke="#0B3B68" stroke-width="6" stroke-linejoin="round" d="M43 37h28l13 13v25H43z"/>
+<path fill="none" stroke="#0B3B68" stroke-width="6" stroke-linejoin="round" d="M71 37v14h13"/>
+<path fill="#18B8AD" d="M48 46h7v-7h7v7h7v7h-7v7h-7v-7h-7z"/>
+<path stroke="#A7B6C8" stroke-width="5" stroke-linecap="round" d="M49 64h20M49 73h15"/>
+<path fill="#18B8AD" d="M48 83h7v10h-7zM59 78h7v15h-7zM70 71h7v22h-7z"/>
+<path fill="none" stroke="#18B8AD" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" d="M45 91c12-6 22-14 31-26l8 2-1-10-10 1"/>
+</svg>
