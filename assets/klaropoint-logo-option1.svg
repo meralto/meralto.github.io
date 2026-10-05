@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 210" role="img" aria-labelledby="title desc">
+<title id="title">Klaropoint</title>
+<desc id="desc">Klaropoint focal point logo with a geometric K and teal point.</desc>
+<defs>
+  <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#163A68"/>
+    <stop offset="1" stop-color="#0B2B52"/>
+  </linearGradient>
+  <linearGradient id="cobalt" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#2E9CFF"/>
+    <stop offset="1" stop-color="#1576E8"/>
+  </linearGradient>
+  <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#20C9C0"/>
+    <stop offset="1" stop-color="#0AA99F"/>
+  </linearGradient>
+</defs>
+
+<!-- Option 1 focal-point K mark -->
+<rect x="18" y="28" width="30" height="112" rx="2" fill="url(#blue)"/>
+<path d="M48 83 L92 28 H132 L82 89 Z" fill="url(#cobalt)"/>
+<path d="M48 84 L85 84 L132 140 H91 Z" fill="url(#teal)"/>
+<circle cx="160" cy="84" r="18" fill="#13B8AA"/>
+
+<!-- Wordmark -->
+<text x="205" y="105" font-family="Inter, Arial, Helvetica, sans-serif" font-size="74" letter-spacing="-3">
+  <tspan fill="#0B2446" font-weight="700">Klaro</tspan><tspan fill="#0B2446" font-weight="400">point</tspan>
+</text>
+<text x="208" y="143" font-family="Inter, Arial, Helvetica, sans-serif" font-size="18" font-weight="500" letter-spacing="5.5" fill="#243B5C">CLAIMS REVENUE RECOVERY</text>
+</svg>
