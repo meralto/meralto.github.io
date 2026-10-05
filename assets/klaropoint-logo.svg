@@ -1,19 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1156 393" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 210" role="img" aria-labelledby="title desc">
 <title id="title">Klaropoint</title>
-<desc id="desc">Healthcare claim revenue recovery logo with a location pin, medical claim document, rising revenue arrow, and Klaropoint wordmark.</desc>
-<ellipse cx="150" cy="355" rx="84" ry="13" fill="#e4e9ef"/>
-<path d="M150 24C78 24 25 77 25 149c0 83 125 197 125 197s125-114 125-197C275 77 222 24 150 24Z" fill="#083d70"/>
-<circle cx="150" cy="143" r="92" fill="#fff"/>
-<path d="M94 78h99l28 29v104H94z" fill="none" stroke="#083d70" stroke-width="8" stroke-linejoin="round"/>
-<path d="M193 78v30h28" fill="none" stroke="#083d70" stroke-width="8" stroke-linejoin="round"/>
-<path d="M109 99h13V86h13v13h13v13h-13v13h-13v-13h-13z" fill="#19b8ae"/>
-<path d="M111 137h67M111 155h54M111 173h40" fill="none" stroke="#9cafc4" stroke-width="9" stroke-linecap="round"/>
-<rect x="108" y="201" width="15" height="29" rx="3" fill="#19b8ae"/>
-<rect x="132" y="190" width="15" height="40" rx="3" fill="#19b8ae"/>
-<rect x="156" y="176" width="15" height="54" rx="3" fill="#19b8ae"/>
-<path d="M102 224c31-11 63-34 86-72" fill="none" stroke="#19b8ae" stroke-width="9" stroke-linecap="round"/>
-<path d="M184 144l17-1-4 17z" fill="#19b8ae"/>
-<text x="304" y="235" font-family="Arial, Helvetica, sans-serif" font-size="136" font-weight="700" letter-spacing="-7">
-  <tspan fill="#083d70">Klaro</tspan><tspan fill="#19b8ae">point</tspan>
+<desc id="desc">Klaropoint focal point logo with a geometric K and teal point.</desc>
+<defs>
+  <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#163A68"/>
+    <stop offset="1" stop-color="#0B2B52"/>
+  </linearGradient>
+  <linearGradient id="cobalt" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#2E9CFF"/>
+    <stop offset="1" stop-color="#1576E8"/>
+  </linearGradient>
+  <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#20C9C0"/>
+    <stop offset="1" stop-color="#0AA99F"/>
+  </linearGradient>
+</defs>
+
+<!-- Option 1 focal-point K mark -->
+<rect x="18" y="28" width="30" height="112" rx="2" fill="url(#blue)"/>
+<path d="M48 83 L92 28 H132 L82 89 Z" fill="url(#cobalt)"/>
+<path d="M48 84 L85 84 L132 140 H91 Z" fill="url(#teal)"/>
+<circle cx="160" cy="84" r="18" fill="#13B8AA"/>
+
+<!-- Wordmark -->
+<text x="205" y="105" font-family="Inter, Arial, Helvetica, sans-serif" font-size="74" letter-spacing="-3">
+  <tspan fill="#0B2446" font-weight="700">Klaro</tspan><tspan fill="#0B2446" font-weight="400">point</tspan>
 </text>
+<text x="208" y="143" font-family="Inter, Arial, Helvetica, sans-serif" font-size="18" font-weight="500" letter-spacing="5.5" fill="#243B5C">CLAIMS REVENUE RECOVERY</text>
 </svg>
